@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Study Guide</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #1a1a2e;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0078d4, #005a9e);
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .toc-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #005a9e;
+      margin-bottom: 28px;
+      border-bottom: 3px solid #0078d4;
+      padding-bottom: 8px;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .toc-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      padding: 24px;
+      border-top: 4px solid #0078d4;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .toc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.13);
+    }
+
+    .toc-card h2 {
+      font-size: 1.1rem;
+      color: #005a9e;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc-card h2 .icon {
+      font-size: 1.4rem;
+    }
+
+    .toc-card ol {
+      padding-left: 20px;
+      line-height: 1.9;
+      color: #333;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #dde3ea;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>☁️ Azure Study Guide</h1>
+    <p>A comprehensive overview of Microsoft Azure service domains</p>
+  </header>
+
+  <main>
+    <h2 class="toc-title">📋 Table of Contents – Azure Service Domains</h2>
+    <div class="toc-grid">
+
+      <div class="toc-card">
+        <h2><span class="icon">🖥️</span> Compute</h2>
+        <ol>
+          <li>Virtual Machines (IaaS)</li>
+          <li>Azure App Service</li>
+          <li>Azure Functions (Serverless)</li>
+          <li>Azure Container Instances</li>
+          <li>Azure Kubernetes Service (AKS)</li>
+          <li>Azure Batch</li>
+          <li>Azure Virtual Desktop</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">💾</span> Storage</h2>
+        <ol>
+          <li>Azure Blob Storage</li>
+          <li>Azure File Storage</li>
+          <li>Azure Queue Storage</li>
+          <li>Azure Table Storage</li>
+          <li>Azure Disk Storage</li>
+          <li>Azure Data Lake Storage</li>
+          <li>Azure Archive Storage</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🌐</span> Networking</h2>
+        <ol>
+          <li>Azure Virtual Network (VNet)</li>
+          <li>Azure Load Balancer</li>
+          <li>Azure Application Gateway</li>
+          <li>Azure VPN Gateway</li>
+          <li>Azure ExpressRoute</li>
+          <li>Azure Content Delivery Network (CDN)</li>
+          <li>Azure DNS</li>
+          <li>Azure Front Door</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🗄️</span> Databases</h2>
+        <ol>
+          <li>Azure SQL Database</li>
+          <li>Azure Cosmos DB</li>
+          <li>Azure Database for MySQL</li>
+          <li>Azure Database for PostgreSQL</li>
+          <li>Azure SQL Managed Instance</li>
+          <li>Azure Cache for Redis</li>
+          <li>Azure Synapse Analytics</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🔐</span> Identity &amp; Security</h2>
+        <ol>
+          <li>Microsoft Entra ID (Azure AD)</li>
+          <li>Azure Key Vault</li>
+          <li>Microsoft Defender for Cloud</li>
+          <li>Microsoft Sentinel (SIEM)</li>
+          <li>Azure Policy</li>
+          <li>Azure Role-Based Access Control (RBAC)</li>
+          <li>Azure Bastion</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🤖</span> AI &amp; Machine Learning</h2>
+        <ol>
+          <li>Azure AI Services (Cognitive Services)</li>
+          <li>Azure Machine Learning</li>
+          <li>Azure OpenAI Service</li>
+          <li>Azure Bot Service</li>
+          <li>Azure Computer Vision</li>
+          <li>Azure Speech Service</li>
+          <li>Azure AI Search</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">📊</span> Analytics &amp; Big Data</h2>
+        <ol>
+          <li>Azure Synapse Analytics</li>
+          <li>Azure HDInsight</li>
+          <li>Azure Data Factory</li>
+          <li>Azure Stream Analytics</li>
+          <li>Azure Databricks</li>
+          <li>Azure Purview (Microsoft Purview)</li>
+          <li>Azure Event Hubs</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🔧</span> DevOps &amp; Developer Tools</h2>
+        <ol>
+          <li>Azure DevOps (Boards, Repos, Pipelines)</li>
+          <li>GitHub Actions for Azure</li>
+          <li>Azure App Configuration</li>
+          <li>Azure Container Registry</li>
+          <li>Azure Artifacts</li>
+          <li>Azure Test Plans</li>
+          <li>Azure API Management</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">📡</span> Internet of Things (IoT)</h2>
+        <ol>
+          <li>Azure IoT Hub</li>
+          <li>Azure IoT Central</li>
+          <li>Azure Digital Twins</li>
+          <li>Azure Sphere</li>
+          <li>Azure Time Series Insights</li>
+          <li>Azure IoT Edge</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">📈</span> Monitoring &amp; Management</h2>
+        <ol>
+          <li>Azure Monitor</li>
+          <li>Azure Log Analytics</li>
+          <li>Azure Application Insights</li>
+          <li>Azure Automation</li>
+          <li>Azure Cost Management + Billing</li>
+          <li>Azure Advisor</li>
+          <li>Azure Resource Manager (ARM)</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🔗</span> Integration &amp; Messaging</h2>
+        <ol>
+          <li>Azure Service Bus</li>
+          <li>Azure Event Grid</li>
+          <li>Azure Logic Apps</li>
+          <li>Azure API Management</li>
+          <li>Azure Relay</li>
+          <li>Azure Notification Hubs</li>
+        </ol>
+      </div>
+
+      <div class="toc-card">
+        <h2><span class="icon">🏢</span> Hybrid &amp; Multi-Cloud</h2>
+        <ol>
+          <li>Azure Arc</li>
+          <li>Azure Stack Hub</li>
+          <li>Azure Stack Edge</li>
+          <li>Azure Site Recovery</li>
+          <li>Azure Migrate</li>
+          <li>Azure VMware Solution</li>
+        </ol>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Azure Study Guide &mdash; All Azure service domains are mutually exclusive topic areas.</p>
+  </footer>
+
+</body>
+</html>
